@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  padding: 1rem 1rem 1rem 0;
+  border-bottom: 1px solid lightblue;
+}
+
+#app {
+  margin: 0 auto;
+  width: 1320px;
+  height: 100vh;
+  overflow: hidden;
+}
+.open {
+  margin: 20px 245px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.popup__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.close {
+  position: relative;
+  bottom: 25px;
+  left: 45%;
+  cursor: pointer;
+}
+.popup {
+  background: #333;
+  color: wheat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  align-items: center;
+  margin-top: 3rem;
+}
+.cities {
+  margin-top: 2rem;
+  flex: 0 0 10%;
+}
+
+.cities__list {
+  flex: 0 0 80%;
+  overflow-y: scroll;
+}
