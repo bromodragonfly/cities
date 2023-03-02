@@ -32,8 +32,8 @@ app.listen(PORT, async () => {
     .connect(URI_CONNECTION, CONNECTION_OPTIONS)
     .then(() => {
       // ADD ONLY ONE TIME
-      //   const citiesFile = JSON.parse(fs.readFileSync('./citiesList.json'))
-      //   Cities.insertMany(citiesFile)
+        const citiesFile = JSON.parse(fs.readFileSync('./citiesList.json'))
+        Cities.insertMany(citiesFile)
 
       console.log('Database connection has been successful')
     })
